@@ -1,0 +1,2 @@
+W = 'weight'
+C = 'color'
