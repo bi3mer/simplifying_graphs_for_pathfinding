@@ -8,8 +8,9 @@ import pickle
 import util
 from Keys import C, W
 
+# SIZES = [10, 25, 50, 75, 100, 125, 150, 175, 200]
 MAZES = 10
-GRID_SIZE = 200
+GRID_SIZE = 250
 SIZE = GRID_SIZE**2
 START = (0,GRID_SIZE-1)
 END = (GRID_SIZE-1,0)
@@ -17,7 +18,7 @@ END = (GRID_SIZE-1,0)
 if not os.path.exists('mazes'):
     os.mkdir('mazes')
 
-for SEED in trange(MAZES):
+for SEED in trange(MAZES, leave=False):
     base_path = os.path.join('mazes', f'{SEED}_{GRID_SIZE}')
     if os.path.exists(base_path):
         continue
