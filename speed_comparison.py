@@ -4,9 +4,7 @@ from networkx import astar_path
 from tqdm import tqdm
 import os
 
-# SIZES = [10, 50, 150, 200]
 SIZES = [10, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250]
-
 
 for S in tqdm(SIZES, leave=False):
     save_name = os.path.join('mazes', f'run_times_{S}.csv')
