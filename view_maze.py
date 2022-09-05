@@ -72,5 +72,9 @@ for tgt in path[1:]:
 node_colors = ['RED' if n in path else 'WHITE' for n in HG.nodes()]
 edge_colors = [HG[u][v][C] for u,v in HG.edges()]
 
-nx.draw(HG, pos=pos, node_color=node_colors, edge_color=edge_colors, node_size=12)
-plt.savefig('normal_maze.png',facecolor='BLACK')
+# nx.draw(HG, pos=pos, node_color=node_colors, edge_color=edge_colors, node_size=12)
+# plt.savefig('normal_maze.png',facecolor='BLACK')
+
+
+print(len(G.nodes), len(G.edges))
+print(len(HG.nodes), len(HG.edges))
